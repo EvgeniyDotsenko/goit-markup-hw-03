@@ -24,6 +24,7 @@ h5,
 h6 {
   color: var(--title-text-color);
   font-size: inherit;
+  margin-top: 0;
 }
 
 button {
@@ -33,11 +34,25 @@ button {
 
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* ссылки */
 a {
   text-decoration: none;
+}
+
+.container {
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* хедер */
@@ -79,6 +94,7 @@ a {
 .hero {
   background: var(--secondary-bg-color);
   letter-spacing: 0.06em;
+  text-align: center;
 }
 
 .hero-title {
@@ -86,8 +102,9 @@ a {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .button {
@@ -97,13 +114,27 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+
+  border-radius: 4px;
+  padding: 10px;
+  border: 0;
+  min-width: 200px;
+  min-height: 50px;
+  text-align: center;
 }
+
+.hero-button {
+  display: inline-block;
+}
+
 /* section */
 .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  margin-bottom: 50px;
 }
 
 /* блок Особенности */
@@ -111,6 +142,7 @@ a {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .features .text {
@@ -137,6 +169,8 @@ a {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
+  margin-bottom: 10px;
 }
 
 .team-position {
@@ -189,12 +223,20 @@ footer .logo {
 
 /* Портфолио */
 /* фильтр */
+.portfolio-filter {
+  margin-bottom: 50px;
+}
+
 .filter-button {
   background-color: var(--secondary-bg);
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+
+  padding: 6px 22px;
+  border: 0;
+  border-radius: 4px;
 }
 
 .filter-button:hover,
