@@ -50,18 +50,38 @@ a {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /* хедер */
+.header-container {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.site-nav {
+  display: flex;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
   letter-spacing: 0.02em;
   font-weight: 500;
   line-height: 1.14;
 }
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
 .auth-nav .link {
   color: var(--primmary-text-color);
   letter-spacing: 0.02em;
@@ -76,6 +96,10 @@ a {
 
 .site-nav .link.current {
   color: var(--accent-color);
+}
+
+.header-nav .logo {
+  margin-right: 85px;
 }
 
 /* стилизация лого */
@@ -223,6 +247,14 @@ footer .logo {
 
 /* Портфолио */
 /* фильтр */
+.filter {
+  display: flex;
+}
+
+.filter-li:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-filter {
   margin-bottom: 50px;
 }
@@ -245,8 +277,15 @@ footer .logo {
   color: var(--secondary-title-color);
 }
 
+/*  */
+
 .works p {
   color: var(--primmary-text-color);
+}
+
+.works-img {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .works-title {
