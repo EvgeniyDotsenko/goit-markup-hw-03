@@ -211,6 +211,10 @@ main .container {
 }
 
 .features-item > img {
+  padding: 25px 100px;
+  background-color: var(--secondary-bg);
+  border-radius: 4px;
+
   margin-bottom: 30px;
 }
 
@@ -282,6 +286,10 @@ main .container {
 
 .team-item {
   width: calc((100% - 3 * 30px) / 4);
+  background-color: var(--primary-bg-color);
+  padding-bottom: 36px;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .team-item:not(:last-child) {
@@ -375,18 +383,11 @@ footer .logo {
 .company-address {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 48px;
   padding-bottom: 28px;
-}
-
-.address {
-  margin-right: 85px;
-}
-
-.footer-network {
-  margin-right: 94px;
 }
 
 .form-input {
@@ -437,8 +438,16 @@ footer .logo {
   color: var(--primmary-text-color);
 }
 
-.works-img {
+/* .works-img {
   margin-bottom: 20px;
+} */
+.card-content {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .works-title {
@@ -460,6 +469,8 @@ footer .logo {
 
 .works-item {
   width: calc((100% - 2 * 30px) / 3);
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .works-item:not(:nth-child(3n)) {
