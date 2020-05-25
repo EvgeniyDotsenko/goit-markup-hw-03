@@ -88,7 +88,7 @@ main .container {
 .site-nav .link {
   display: block;
   padding-top: 32px;
-  padding-bottom: 28px;
+  padding-bottom: 29px;
 
   color: var(--title-text-color);
   letter-spacing: 0.02em;
